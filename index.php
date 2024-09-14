@@ -78,7 +78,7 @@
 </select>
   </div>
   <div class="col-lg-2 mb-3">
-  <label class="form-label" style="font-weight: 500">Adult</label>
+  <label class="form-label" style="font-weight: 500">Children</label>
   <select class="form-select shadow-none">
   <option value="1">One</option>
   <option value="2">Two</option>
@@ -118,6 +118,11 @@
          <span class="badge rounded-pill text-bg-light text-wrap">AC</span>
          <span class="badge rounded-pill text-bg-light text-wrap">Heater</span>
        </div>
+       <div class="guests mb-4">
+         <h6 class="mb-1">Guests</h6>
+         <span class="badge rounded-pill text-bg-light text-wrap">5 Adults</span>
+         <span class="badge rounded-pill text-bg-light text-wrap">4 Childrens</span>
+       </div>
        <div class="rating mb-4">
          <h6 class="mb-1">Rating</h6>
          <span class="badge-rounded-pill bg-light">
@@ -154,6 +159,11 @@
          <span class="badge rounded-pill text-bg-light text-wrap">Television</span>
          <span class="badge rounded-pill text-bg-light text-wrap">AC</span>
          <span class="badge rounded-pill text-bg-light text-wrap">Heater</span>
+       </div>
+       <div class="guests mb-4">
+         <h6 class="mb-1">Guests</h6>
+         <span class="badge rounded-pill text-bg-light text-wrap">5 Adults</span>
+         <span class="badge rounded-pill text-bg-light text-wrap">4 Childrens</span>
        </div>
        <div class="rating mb-4">
          <h6 class="mb-1">Rating</h6>
@@ -246,6 +256,7 @@
 <!-- Testimonials -->
 <h2 class="mt-4 pt-4 mb-4 text-center fw-bold h-font">TESTIMONIALS</h2>
   <div class="container">
+
     <!-- Swiper -->
   <div class="swiper swiper-testimonials">
     <div class="swiper-wrapper mb-5">
