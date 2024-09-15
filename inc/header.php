@@ -1,7 +1,7 @@
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.php">TJ Hotel</a>
+    <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.php">TAJ Hotel</a>
     <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,17 +45,17 @@
       </div>
       <div class="modal-body">
       <div class="mb-3">
-    <label class="form-label">Email address</label>
-    <input type="email" class="form-control shadow-none" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label class="form-label">Password</label>
-    <input type="password" class="form-control shadow-none" aria-describedby="emailHelp">
-  </div>
-  <div class="d-flex align-items-center justify-content-between mb-2">
-    <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
-    <a href="javascript: void(0)" class="text-secoundary text-decoration-none" >Forgot Password?</a>
-  </div>
+        <label class="form-label">Email address</label>
+        <input type="email" class="form-control shadow-none" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control shadow-none" aria-describedby="emailHelp">
+      </div>
+     <div class="d-flex align-items-center justify-content-between mb-2">
+       <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+       <a href="javascript: void(0)" class="text-secoundary text-decoration-none" >Forgot Password?</a>
+    </div>
       </div>
       </form>
     </div>

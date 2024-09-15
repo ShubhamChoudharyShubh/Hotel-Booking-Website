@@ -2,7 +2,7 @@
 <div class="container-fluid bg-white mt-5">
    <div class="row">
     <div class="col-lg-4 p-4">
-     <h3 class="h-font fw-bold fs-3 mb-2">TJ HOTELS</h3>
+     <h3 class="h-font fw-bold fs-3 mb-2">TAJ HOTELS</h3>
      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi saepe quod magnam voluptate deleniti corrupti! Praesentium eaque dolor, provident placeat inventore, pariatur nemo, cumque fuga ipsum quibusdam fugiat blanditiis illo.</p>
     </div>
     <div class="col-lg-4 p-4">
