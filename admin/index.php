@@ -1,5 +1,5 @@
 <?php
- 
+require ('inc/essentials.php');
 require ('inc/db_config.php');
 ?>
 
@@ -45,10 +45,19 @@ if(isset($_POST['login']))
     $frm_data = filteration($_POST);
     $query = "SELECT * FROM `admin-cred` WHERE `admin_name`=? AND `admin_pass`=?";
     $values = [$frm_data['admin_name'],$frm_data['admin_pass']];
-    // $datatypes = "ss";
+     // $datatypes = "ss";
    // print_r($_POST);
    $res = select($query,$values,"ss"); //both $res are different in index and db_config
-   print_r($res);
+   if($res->num_rows==1){
+    $row = mysqli_fetch_assoc($res);
+    session_start();
+    $_SESSION['adminLogin'] = true;
+    $_SESSION['adminId'] = $row['sr_no'];
+    redirect('dashboard.php');
+   }
+   else{
+      alert('error','Login failed - Invalid Credentials!');
+   }
 }
 ?>
 
