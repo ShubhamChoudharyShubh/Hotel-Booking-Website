@@ -39,12 +39,16 @@ require ('inc/db_config.php');
 </div>
 
 <?php
+//checkout notion PHP Login System with SQL Query Execution and Input Filtering
 if(isset($_POST['login']))
 {
     $frm_data = filteration($_POST);
-    echo"<h1>$frm_data[admin_name]</h1>";
-    echo"<h1>$frm_data[admin_pass]</h1>";
+    $query = "SELECT * FROM `admin-cred` WHERE `admin_name`=? AND `admin_pass`=?";
+    $values = [$frm_data['admin_name'],$frm_data['admin_pass']];
+    // $datatypes = "ss";
    // print_r($_POST);
+   $res = select($query,$values,"ss"); //both $res are different in index and db_config
+   print_r($res);
 }
 ?>
 
