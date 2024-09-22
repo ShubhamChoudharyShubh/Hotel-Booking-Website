@@ -1,8 +1,12 @@
 <?php
 require ('inc/essentials.php');
 require ('inc/db_config.php');
-?>
 
+session_start();
+if(isset($_SESSION['adminLogin']) && $_SESSION['adminLogin']==true){
+ redirect('dashboard.php');
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,14 +47,13 @@ require ('inc/db_config.php');
 if(isset($_POST['login']))
 {
     $frm_data = filteration($_POST);
-    $query = "SELECT * FROM `admin-cred` WHERE `admin_name`=? AND `admin_pass`=?";
+    $query = "SELECT * FROM `admin_cred` WHERE `admin_name`=? AND `admin_pass`=?";
     $values = [$frm_data['admin_name'],$frm_data['admin_pass']];
      // $datatypes = "ss";
    // print_r($_POST);
    $res = select($query,$values,"ss"); //both $res are different in index and db_config
    if($res->num_rows==1){
     $row = mysqli_fetch_assoc($res);
-    session_start();
     $_SESSION['adminLogin'] = true;
     $_SESSION['adminId'] = $row['sr_no'];
     redirect('dashboard.php');

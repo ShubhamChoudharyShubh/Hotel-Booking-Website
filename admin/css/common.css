@@ -29,3 +29,9 @@ input::-webkit-inner-spin-button {
   height: 1.3px; 
   margin: 0 auto;
        }
+
+.custom-alert{
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}

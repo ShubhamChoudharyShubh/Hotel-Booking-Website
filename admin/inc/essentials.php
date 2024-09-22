@@ -1,8 +1,14 @@
 <?php 
 
- function adminLogin(){
+ function adminLogin()
+ {
    session_start();
-   if(isset($_SESSION))
+   if(!(isset($_SESSION['adminLogin']) && $_SESSION['adminLogin']==true)){
+    echo"<script>
+     window.location.href='index.php';
+     </script>";
+   }
+   session_regenerate_id(true);
  }
 
 
