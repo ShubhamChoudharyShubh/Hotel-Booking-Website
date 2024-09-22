@@ -14,7 +14,8 @@
   <h2 class="fw-bold h-font text-center">Contact Us</h2>
   <div class="h-line bg-dark"></div>
   <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-    Eligendi verit ullam dignissimos adipisci autem.</p>  </div>
+    Eligendi verit ullam dignissimos adipisci autem.</p>
+</div>
 <div class="container">
   <div class="row">
     <div class="col-lg-6 col-md-6 mb-5 px-4">
@@ -26,7 +27,6 @@
         Bhopal, Madhya Pradesh, India
        </a>
        <h5 class="mt-3">Call Us</h5>
-        <a href="tel: +9178943958936" class="d-inline-block mb-2 text-decoration-none text-dark"><i class="bi bi-telephone"></i> +91 78943958936</a><br>
         <a href="tel: +9154539589342" class="d-inline-block mb-2 text-decoration-none text-dark"><i class="bi bi-telephone"></i> +91 54539589342</a>
         <h5 class="mt-3">Email</h5>
         <a href="mailto: shubhamchoudhary7225@gmail.com" class="d-inline-block mb-2 text-decoration-none text-dark">

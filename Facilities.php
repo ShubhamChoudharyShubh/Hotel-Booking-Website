@@ -11,7 +11,6 @@
         transform: scale(1.03);
         transition: all 0.3s;
       }
-   
     </style>
 </head>
 <body class="bg-light">
@@ -23,7 +22,7 @@
   <div class="h-line bg-dark"></div>
   <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
     Eligendi verit ullam dignissimos adipisci autem.</p>
-  </div>
+</div>
 
 <div class="container">
   <div class="row">
@@ -33,7 +32,6 @@
         <img src="images/facilities/IMG_41622.svg" width="40px">
         <h5 class="m-0 ms-3">wifi</h5>
         </div>
-        
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fuga eaque, tempore hic dolor non!</p>
       </div>
     </div>
@@ -42,11 +40,10 @@
         <div class="d-flex align-items-center mb-2">
         <img src="images/facilities/IMG_41622.svg" width="40px">
         <h5 class="m-0 ms-3">wifi</h5>
-        </div>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fuga eaque, tempore hic dolor non!</p>
       </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fuga eaque, tempore hic dolor non!</p>
     </div>
+  </div>
     <div class="col-lg-4 col-md-6 mb-5 px-4">
       <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
         <div class="d-flex align-items-center mb-2">

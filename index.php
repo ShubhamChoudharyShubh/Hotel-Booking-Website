@@ -7,17 +7,17 @@
     <?php require('inc/links.php') ?>
     <title>TAJ Hotel</title>
     <style>
-.availablity-form{
-  margin-top: -50px;
-  z-index: 2;
-  position: relative;
-}
-@media screen and (max-width: 575px){
-  .availablity-form{
-    margin-top: 25px;
-    padding: 0 35px;
-  }
-}
+       .availablity-form{
+         margin-top: -50px;
+         z-index: 2;
+         position: relative;
+       }
+       @media screen and (max-width: 575px){
+         .availablity-form{
+           margin-top: 25px;
+           padding: 0 35px;
+         }
+       }
     </style>
 </head>
 <body class="bg-light">
