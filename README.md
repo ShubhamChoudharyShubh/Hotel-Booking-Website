@@ -1,114 +1,112 @@
-Here's a sample `README.md` file for your hotel booking website project, outlining key features, setup instructions, and technologies used:
+Here’s a `README.md` file for your hotel booking website project, which you can copy and paste into your GitHub repository. It provides an overview of the project, installation instructions, and basic features.
 
 ```md
 # Hotel Booking Website
 
-A hotel booking website built using **PHP** and **MySQL**, allowing users to search, book, and manage hotel reservations. It includes a secure admin panel to manage bookings, rooms, and user accounts.
+This is a full-stack **Hotel Booking Website** built using **PHP** and **MySQL** for the backend and **HTML**, **CSS**, **Bootstrap**, and **JavaScript** for the frontend. This project includes both **user-end** and **admin-end** functionalities, allowing users to book hotel rooms, and administrators to manage bookings, users, and rooms.
 
 ## Features
 
-### User Features
-- **Search Hotels**: Users can search for available rooms based on check-in and check-out dates.
-- **Book Rooms**: Book hotel rooms and view booking details.
-- **Manage Bookings**: Modify or cancel existing bookings.
-- **User Authentication**: Login, registration, and profile management.
-- **Review and Rating**: Users can rate and review their hotel stays.
-- **Payment Integration**: Online payment gateway for booking confirmation.
+### User End:
+- **Book Hotel Rooms**: Users can browse and book rooms based on availability.
+- **Booking Management**: Users can view, modify, or cancel their bookings.
+- **Login and Registration**: Users can create an account or log in to manage their bookings.
+- **Review and Ratings**: After their stay, users can leave reviews and ratings.
+- **Profile Management**: Users can update their profile information.
+- **Online Payments**: Integration with **Paytm** for online payments (or any payment gateway of your choice).
 
-### Admin Features
-- **Room Management**: Add, modify, or delete rooms.
-- **User Management**: Manage user accounts (ban, delete, etc.).
-- **Booking Management**: Finalize or cancel bookings, process refunds, and generate invoices.
-- **Review and Rating Management**: View and manage user reviews.
-- **Website Management**: Temporarily shut down the website for maintenance.
+### Admin End:
+- **Room Management**: Admins can add, modify, or delete rooms and their details.
+- **Booking Management**: Admins can manage booking statuses, check-in/check-out, and issue refunds.
+- **User Management**: Admins can view, delete, or ban/unban users.
+- **Review Management**: Admins can manage and moderate reviews and ratings.
+- **System Shutdown**: Admins can temporarily disable the website for maintenance.
 
-## Technologies Used
-- **Frontend**: HTML, CSS, JavaScript, Bootstrap 5
-- **Backend**: PHP (with PDO/MySQLi for database operations)
-- **Database**: MySQL
-- **Payment Gateway**: Integrated (e.g., Paytm or other)
-- **Libraries and Plugins**: Swiper.js for carousels, Bootstrap Icons, Google Maps Embed for location
+## Tech Stack
 
-## Installation
+- **Backend**: PHP, MySQL
+- **Frontend**: HTML, CSS, Bootstrap, JavaScript
+- **Libraries/Plugins**: Swiper.js (for carousels), Bootstrap Icons (for UI elements)
+- **Database**: MySQL for managing users, rooms, and bookings.
+- **Hosting**: Designed for hosting on platforms like Hostinger, but can be deployed on any PHP/MySQL supported platform.
 
-### Prerequisites
-- A local server environment like **XAMPP**, **WAMP**, or **MAMP**.
-- **PHP 7.4+** installed on your system.
-- **MySQL** database server.
+## Setup and Installation
 
-### Steps to Install
+### Requirements:
+- PHP 7.x or later
+- MySQL Database
+- A web server (Apache, Nginx, etc.)
+- Composer (Optional for managing dependencies)
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/hotel-booking-website.git
-    ```
+### Steps to Run:
 
-2. **Move the project** to your server's root directory (`htdocs` for XAMPP, `www` for WAMP):
-    ```bash
-    mv hotel-booking-website /path/to/your/server/root/
-    ```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/hotel-booking-website.git
+   ```
 
-3. **Import the database**:
-    - Open **phpMyAdmin** and create a new database (e.g., `hotel_booking`).
-    - Import the provided `hotel_booking.sql` file into this database.
+2. **Database Setup**:
+   - Create a MySQL database and import the `hotel_booking.sql` file located in the `database/` directory.
+   - Update the database configuration in `inc/db_config.php` file with your database credentials:
+     ```php
+     define('DB_HOST', 'localhost');
+     define('DB_USER', 'your_db_username');
+     define('DB_PASS', 'your_db_password');
+     define('DB_NAME', 'your_db_name');
+     ```
 
-4. **Configure database connection**:
-    - Go to the `inc/db_config.php` file.
-    - Update the following with your database credentials:
-    ```php
-    $host = 'localhost';
-    $user = 'root'; // your DB username
-    $pass = ''; // your DB password
-    $db = 'hotel_booking'; // your database name
-    ```
+3. **Admin Account Setup**:
+   - Manually insert admin credentials into the `admin_cred` table in the database. Example:
+     ```sql
+     INSERT INTO admin_cred (admin_name, admin_pass) VALUES ('admin', 'password');
+     ```
 
-5. **Run the project**:
-    - Start your local server (Apache and MySQL).
-    - Open your browser and go to:
-      ```
-      http://localhost/hotel-booking-website/
-      ```
+4. **Run the Project**:
+   - Place the project files in your web server's root directory (e.g., `htdocs` for XAMPP, `www` for WAMP).
+   - Open a web browser and navigate to `http://localhost/hotel-booking-website/` to view the user side.
+   - Navigate to `http://localhost/hotel-booking-website/admin/` for the admin panel.
 
-## Admin Login
-- **URL**: `http://localhost/hotel-booking-website/admin`
-- **Default Admin Credentials**:
-  - **Username**: `admin`
-  - **Password**: `admin123`
+### Admin Panel Credentials:
+- **Username**: `admin`
+- **Password**: `password` (Change this from the database after first login).
 
 ## Project Structure
 
-```bash
-hotel-booking-website/
-│
-├── inc/                # PHP includes (e.g., db_config.php, scripts, essentials)
-├── admin/              # Admin panel pages and logic
-├── assets/             # CSS, JS, images, and plugins
-├── dashboard.php       # Admin dashboard
-├── index.php           # User-facing home page
-├── booking.php         # Booking details and process
-├── my_account.php      # User account page
-├── about.php           # About page
-├── contact.php         # Contact page
-├── ...
-└── README.md           # Project overview
+```
+├── assets/                     # CSS, JavaScript, and image files
+├── inc/                        # Includes essential files (DB Config, PHP Functions)
+│   ├── db_config.php           # Database configuration
+│   ├── essentials.php          # Core functions like `filteration`, `select`, `alert`, `redirect`
+│   └── links.php               # External links for CSS and JS files
+├── admin/                      # Admin-side pages
+│   ├── dashboard.php           # Admin dashboard page
+│   ├── manage_rooms.php        # Admin room management page
+│   ├── manage_users.php        # Admin user management page
+│   ├── manage_bookings.php     # Admin booking management page
+│   └── logout.php              # Admin logout page
+├── user/                       # User-side pages
+│   ├── index.php               # Home page for users
+│   ├── booking.php             # Room booking page
+│   ├── my_account.php          # User profile and booking management page
+├── inc/                        # Backend functions and configuration files
+│   ├── db_config.php           # Database connection setup
+│   ├── essentials.php          # Helper functions (redirection, filtering)
+├── database/                   # Database-related files
+│   └── hotel_booking.sql       # SQL script to create database tables
+└── README.md                   # Project documentation
 ```
 
-## Future Enhancements
-- Add more payment gateways (Stripe, PayPal, etc.).
-- Enable multi-language support.
-- Add email notifications for booking confirmations.
-- Implement a loyalty/reward system for frequent users.
+## Contributing
 
-## Contribution Guidelines
-If you'd like to contribute:
-1. Fork the repository.
-2. Create a new branch for your feature (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature-name`).
-5. Create a Pull Request.
+Feel free to fork this repository and submit pull requests if you would like to contribute to this project. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-This project is open-source and available under the [MIT License](LICENSE).
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ```
 
-Make sure to update the placeholders like `your-username` and database configuration based on your project setup. You can add more sections if needed based on your project's complexity.
+### Notes:
+- Make sure to update the repository link in the `git clone` command with your actual GitHub repo URL.
+- Add a `hotel_booking.sql` file in the `database/` folder if you haven't already, to help users set up the project easily.
+- If you add more features later, you can modify the README accordingly.
