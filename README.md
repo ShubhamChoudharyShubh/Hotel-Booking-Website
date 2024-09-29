@@ -1,6 +1,5 @@
 Here’s a `README.md` file for your hotel booking website project, which you can copy and paste into your GitHub repository. It provides an overview of the project, installation instructions, and basic features.
 
-```md
 # Hotel Booking Website
 
 This is a full-stack **Hotel Booking Website** built using **PHP** and **MySQL** for the backend and **HTML**, **CSS**, **Bootstrap**, and **JavaScript** for the frontend. This project includes both **user-end** and **admin-end** functionalities, allowing users to book hotel rooms, and administrators to manage bookings, users, and rooms.
