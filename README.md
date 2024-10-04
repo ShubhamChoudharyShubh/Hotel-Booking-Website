@@ -104,8 +104,3 @@ Feel free to fork this repository and submit pull requests if you would like to 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ```
-
-### Notes:
-- Make sure to update the repository link in the `git clone` command with your actual GitHub repo URL.
-- Add a `hotel_booking.sql` file in the `database/` folder if you haven't already, to help users set up the project easily.
-- If you add more features later, you can modify the README accordingly.
